@@ -9,6 +9,7 @@ import (
 	array_slice "primitivo.com/applinh/learngo/arrayslice"
 	for_loops "primitivo.com/applinh/learngo/forloops"
 	functions "primitivo.com/applinh/learngo/functions"
+	goRoutines "primitivo.com/applinh/learngo/goroutines"
 	ifelse "primitivo.com/applinh/learngo/ifelse"
 	me "primitivo.com/applinh/learngo/me"
 	oop "primitivo.com/applinh/learngo/oop"
@@ -27,7 +28,11 @@ func main() {
 	ifelse.ExecLesson()
 	_map.ExecLesson()
 	oop.ExecLesson()
-
+	goRoutines.ExecLesson()
+	goRoutines.ExecLesson2()
+	goRoutines.ExecLesson3()
+	goRoutines.ExecLesson4()
+	goRoutines.ExecLesson5()
 }
 
 
