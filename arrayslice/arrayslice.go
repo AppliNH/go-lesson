@@ -12,4 +12,12 @@ func ExecLesson() {
 	fmt.Println(fixedSizeArr)
 	fmt.Println(secondArr)
 	fmt.Println("sliceArr : ", sliceArr)
+
+	//Caution !
+	//You can test the equality between two arrays
+	// but :
+	// - Arrays' size need to be equal 
+	// - elements types need to the same
+	// - elements need to be equal and in the same order
+	// Ex [3,9,6] == [3,9,6] but [3,9,6] == [3,6,9]. Order matters !
 }

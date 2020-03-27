@@ -22,4 +22,9 @@ func ExecLesson() {
 	for key, value := range myDict {
 		fmt.Println(key, " : ", value)
 	}
+
+
+	//for { ... } is an infinite loop
+	//for [condition] { ... } is a while
+	// for { ... break } allows to break out of the "for" loop
 }
