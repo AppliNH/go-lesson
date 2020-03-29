@@ -109,7 +109,7 @@ func RetroClock() {
 
 	for {
 		fmt.Println("\f")
-		hours, minutes, seconds := time.Now().Clock()
+		hours, minutes, seconds := time.Now().Local().Clock()
 		
 		rClock := [][5]string{
 			clockNumbers[hours/10],clockNumbers[hours%10],
