@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-var clockNumbers = map[int][5]string{
+var clockNumbers = [][5]string{
 	0: [5]string{
 		"███",
 		"█ █",
@@ -90,7 +90,7 @@ var separator = [5]string{
 }
 
 
-func clearScreen() {
+func ClearScreen() {
 
 	switch myOS := runtime.GOOS ; myOS {
 	case "windows":
@@ -130,6 +130,6 @@ func RetroClock() {
 		fmt.Println()
 
 		time.Sleep(1 * time.Second)
-		clearScreen()
+		ClearScreen()
 	}
 }

@@ -15,9 +15,14 @@ func ExecLesson() {
 
 	stringArr := []string{"a", "b", "c"}
 
+
 	for index, value := range stringArr {
 		fmt.Println(index, " : ", value)
 	}
+	
+	//WARNING !
+	//Go won't execute a range loop if the given slice is nil !
+	//But the program won't crash
 
 	for key, value := range myDict {
 		fmt.Println(key, " : ", value)

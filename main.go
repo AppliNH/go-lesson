@@ -19,6 +19,7 @@ import (
 	me "primitivo.com/applinh/learngo/me"
 	miniProjects "primitivo.com/applinh/learngo/miniProjects"
 	oop "primitivo.com/applinh/learngo/oop"
+	rune_string_byte "primitivo.com/applinh/learngo/rune_string_byte"
 	shadowing "primitivo.com/applinh/learngo/shadowing"
 	_map "primitivo.com/applinh/learngo/themap"
 	vars "primitivo.com/applinh/learngo/variables"
@@ -38,8 +39,18 @@ func main() {
 		//oh btw, an OR multi case is
 		/* case "blabla","blibli":
 		do things */
+		case "rune_string_byte":
+			//rune_string_byte.ExecLesson1(9984,10175)
+			//rune_string_byte.ExecLesson2()
+			//rune_string_byte.ExecLesson3()
+			rune_string_byte.ExecLesson4()
 		case "array_slice":
 			array_slice.ExecLesson()
+			array_slice.ExecLesson2()
+			array_slice.ExecLesson3()
+			array_slice.ExecLesson4()
+			array_slice.ExecLesson5()
+			array_slice.ExecLesson6()
 		case "for_loops":
 			for_loops.ExecLesson()
 			for_loops.ExecLesson2()
@@ -83,6 +94,12 @@ func main() {
 					miniProjects.WordFinder("Ok that's cool dude !", "cool")
 				case "RetroClock":
 					miniProjects.RetroClock()
+				case "FileFinder":
+					miniProjects.FileFinderMain(a[3])
+				case "BouncingBall":
+					miniProjects.BouncingBall(10,10)
+				case "SpamMask":
+					miniProjects.SpamMask()
 				default:
 					fmt.Println("No project found for ", a[2])
 				}
